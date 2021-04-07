@@ -5,12 +5,16 @@
   "repository": {
     "url": "https://github.com/ed3899/heroku-ssr-by-ed"
   },
+  "author": {
+    "name": "Eduardo Casanova"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest"
+    "test": "jest",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
@@ -28,5 +32,12 @@
     "jest": "^26.6.3",
     "ts-jest": "^26.5.4",
     "vue-jest": "^3.0.4"
-  }
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "keywords": [
+    "ssr",
+    "heroku"
+  ]
 }
